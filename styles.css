@@ -1793,6 +1793,10 @@ h2 {
   letter-spacing: -0.005em;
 }
 
+.mobile-title-break {
+  display: inline;
+}
+
 .lead {
   margin: 30px 0 0;
   color: var(--muted);
@@ -2411,12 +2415,59 @@ h2 {
     padding: 96px 22px 48px;
   }
 
+  .panel-mirror .panel-copy,
+  .panel-mirror .panel-copy ~ * {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .frame,
+  .project-terminal,
+  .capability-panel {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .transition-glyph {
+    display: none;
+  }
+
+  .reveal-step,
+  .scroll-flow,
+  .scroll-flow-left,
+  .scroll-flow-right,
+  .scroll-flow-punch {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+  }
+
   .panel::after {
     inset: 78px 18px 28px;
   }
 
   h1 {
     font-size: clamp(3.2rem, 13vw, 4.4rem);
+  }
+
+  .slim-copy h2 {
+    font-size: clamp(1.48rem, 6vw, 2rem);
+    line-height: 1.16;
+  }
+
+  .mobile-title-break {
+    display: block;
+  }
+
+  .kicker {
+    font-size: 0.68rem;
+    line-height: 1.6;
+  }
+
+  .lead,
+  .slim-copy .lead {
+    font-size: clamp(0.96rem, 4.35vw, 1.1rem);
   }
 
   .scene-code {
@@ -2448,6 +2499,32 @@ h2 {
     height: 76px;
   }
 
+  .frame-awards .award-text {
+    justify-content: center;
+    min-height: 76px;
+  }
+
+  .frame-awards .award-row strong,
+  .frame-awards .award-row em {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: clip;
+  }
+
+  .frame-awards .award-row strong {
+    font-size: clamp(0.96rem, 4.4vw, 1.08rem);
+  }
+
+  .frame-awards .award-row em {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  #yifan .panel-copy h2 {
+    font-size: clamp(1.48rem, 5.9vw, 2rem);
+    line-height: 1.18;
+  }
+
   .conversion-card {
     min-height: 220px;
     gap: 20px;
@@ -2455,6 +2532,26 @@ h2 {
 
   .conversion-card span {
     font-size: clamp(2rem, 12vw, 3.6rem);
+  }
+
+  .migration-visual {
+    gap: 12px;
+    padding-inline: 14px;
+  }
+
+  .migration-visual span {
+    font-size: clamp(1.7rem, 10vw, 3rem);
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+  }
+
+  .site-footer div {
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
