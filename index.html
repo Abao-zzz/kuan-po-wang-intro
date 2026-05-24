@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>王冠博 | Software Engineer</title>
+    <meta name="description" content="王冠博的全畫面滾動式自我介紹網頁。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1012'/%3E%3Cpath d='M12 13h40v38H12z' fill='none' stroke='%2336c5bd' stroke-width='3'/%3E%3Ctext x='32' y='39' font-family='Arial' font-size='18' font-weight='700' text-anchor='middle' fill='white'%3EKW%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css?v=github-pages-1" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+    <script src="script.js?v=github-pages-1" defer></script>
+  </head>
+  <body>
+    <div class="scroll-progress" data-progress></div>
+    <div class="crt-overlay" aria-hidden="true"></div>
+    <div class="enter-scanner" aria-hidden="true" data-enter-scanner></div>
+    <div class="transition-glyph" aria-hidden="true" data-transition>
+      <span class="transition-year" data-transition-year>—</span>
+    </div>
+    <div class="scene-stage" aria-hidden="true">
+      <div class="scene-ring ring-one"></div>
+      <div class="scene-ring ring-two"></div>
+      <div class="scene-beam beam-one"></div>
+      <div class="scene-beam beam-two"></div>
+      <div class="scene-code">
+        <span>C# async Task SyncOrders()</span>
+        <span>SELECT KPI FROM ERP</span>
+        <span>MSSQL INDEX SEEK</span>
+        <span>.NET API / RBAC / ETL</span>
+        <span>VB6 → C# WinForms</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#intro" aria-label="回到開頭">
+        <span>KW</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#intro">Profile</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#school">Awards</a>
+        <a href="#cases">Projects</a>
+        <a href="#pxmart">PX Mart</a>
+        <a href="#yifan">Yifan</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel hero-panel" id="intro" data-panel>
+        <div class="hero-stage">
+          <h1>王冠博</h1>
+          <p class="lead">C# / .NET 軟體工程師 — 把複雜業務邏輯轉成穩定可擴展的系統</p>
+          <span class="scroll-cue" aria-hidden="true">SCROLL ↓</span>
+        </div>
+      </section>
+
+      <section class="panel capabilities-panel" id="capabilities" data-panel>
+        <div class="panel-copy slim-copy">
+          <p class="kicker">02 / Capability Stack</p>
+          <h2>技術能力</h2>
+          <p class="lead">每天用來解問題的語言、思維、與經驗範圍</p>
+        </div>
+
+        <div class="capability-panel" aria-label="技能與能力條列">
+          <div class="panel-topline">
+            <span>Capability Stack</span>
+            <span>2026</span>
+          </div>
+          <ol class="capability-list">
+            <li><span>01</span><strong>C# / .NET / MSSQL</strong></li>
+            <li><span>02</span><strong>系統維護與重構</strong></li>
+            <li><span>03</span><strong>後端資料處理開發</strong></li>
+            <li><span>04</span><strong>資料庫設計</strong></li>
+            <li><span>05</span><strong>SQL 效能優化</strong></li>
+            <li><span>06</span><strong>舊系統現代化</strong></li>
+            <li><span>07</span><strong>除錯與問題排查</strong></li>
+            <li><span>08</span><strong>跨團隊溝通</strong></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="panel awards-panel" id="school" data-panel data-year="2017—2021" data-label="awards">
+        <div class="panel-copy slim-copy">
+          <p class="kicker">03 / University Awards · 2017 — 2021</p>
+          <h2>中國科技大學｜競賽得獎紀錄</h2>
+        </div>
+
+        <div class="frame frame-awards" aria-label="競賽獎項紀錄">
+          <div class="frame-bar">
+            <span class="frame-pulse" aria-hidden="true"></span>
+            <strong>honors.archive</strong>
+            <em>04 entries</em>
+          </div>
+          <div class="award-stack">
+            <button type="button" class="award-row" data-full="assets/images/award-06.jpg" data-title="第22屆資訊應用組第一名｜Open Data × 藍牙 4.1 推播">
+              <span class="award-no">01</span>
+              <img src="assets/images/award-06.jpg" alt="第22屆資訊應用組第一名獎狀" />
+              <span class="award-text">
+                <strong>第22屆資訊應用組第一名</strong>
+                <em>Open Data × 企業資料整合，藍牙 4.1 推播</em>
+              </span>
+            </button>
+            <button type="button" class="award-row" data-full="assets/images/award-07.jpg" data-title="第23屆產學合作組第三名｜翡翠水庫 LoRa IoT">
+              <span class="award-no">02</span>
+              <img src="assets/images/award-07.jpg" alt="第23屆產學合作組第三名獎狀" />
+              <span class="award-text">
+                <strong>第23屆產學合作組第三名</strong>
+                <em>翡翠水庫 LoRa 物聯網管理平台</em>
+              </span>
+            </button>
+            <button type="button" class="award-row" data-full="assets/images/award-05.jpg" data-title="第24屆智慧製造AI創新應用組佳作｜AI 風淋室著裝檢查">
+              <span class="award-no">03</span>
+              <img src="assets/images/award-05.jpg" alt="第24屆智慧製造AI創新應用組佳作獎狀" />
+              <span class="award-text">
+                <strong>第24屆智慧製造 AI 創新佳作</strong>
+                <em>AI 電腦視覺風淋室著裝檢查 × 門禁</em>
+              </span>
+            </button>
+            <button type="button" class="award-row" data-full="assets/images/award-02.jpg" data-title="第25屆資訊應用組第一名｜雷射追蹤無人機追捕系統">
+              <span class="award-no">04</span>
+              <img src="assets/images/award-02.jpg" alt="第25屆資訊應用組第一名獎狀" />
+              <span class="award-text">
+                <strong>第25屆資訊應用組第一名</strong>
+                <em>雷射追蹤無人機追捕系統</em>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel cases-panel panel-mirror" id="cases" data-panel data-year="2017—2021" data-label="research">
+        <div class="panel-copy slim-copy">
+          <p class="kicker">04 / Industry Collaboration · 2017 — 2020</p>
+          <h2>產學合作｜中國科技大學產控中心</h2>
+          <p class="lead">研究助理期間參與的產學案，覆蓋 IoT、AI 視覺、智慧城市</p>
+        </div>
+
+        <div class="project-terminal">
+          <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>projects.list</strong>
+          </div>
+          <ul>
+            <li>
+              <span>01</span>
+              <div class="case-body">
+                <strong>大場域燈控模組開發</strong>
+                <em>MQTT 即時通訊整合燈具、投影、布幕；情境模式設計</em>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div class="case-body">
+                <strong>翡翠水庫 IoT 管理平台</strong>
+                <em>LoRa 物聯網平台，水文 / 氣象 / 壩體監測與門禁安全</em>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div class="case-body">
+                <strong>無人機智慧追蹤</strong>
+                <em>攝影機自動控制邏輯，整合影像辨識模型訓練</em>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div class="case-body">
+                <strong>夜店人臉辨識Linebot機器人</strong>
+                <em>人臉辨識結果串接 Linebot，支援互動查詢與通知流程</em>
+              </div>
+            </li>
+            <li>
+              <span>05</span>
+              <div class="case-body">
+                <strong>路邊智慧停車柱</strong>
+                <em>API 串接訂單資料，停車時段與費用計算邏輯</em>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel pxmart-panel pxmart-dashboard" id="pxmart" data-panel data-year="2022—2024" data-label="px mart">
+        <div class="pxmart-stamp">
+          <h2>全聯實業</h2>
+        </div>
+
+        <div class="frame frame-highlights" aria-label="全聯時期重點開發案">
+          <div class="frame-bar">
+            <span class="frame-pulse" aria-hidden="true"></span>
+            <strong>px.highlights</strong>
+            <em>05 cases</em>
+          </div>
+          <div class="highlight-stack">
+            <article class="highlight-card">
+              <header>
+                <span class="highlight-tag">API</span>
+                <strong>Uber Eats 菜單同步</strong>
+              </header>
+              <p>原本各門市菜單需逐筆同步到 Uber Eats，重寫成批次上傳 + 資料壓縮策略，API 傳遞效能 <span class="num-red">+76%</span>，高峰時段不再卡同步佇列。</p>
+            </article>
+            <article class="highlight-card">
+              <header>
+                <span class="highlight-tag">SQL</span>
+                <strong>資料庫效能優化</strong>
+              </header>
+              <p>重新檢視關鍵 SQL 查詢與索引結構，配合連線池與快取策略調整，ERP 連線效能同步提升 <span class="num-red">+70%</span>，高併發下回應時間穩定收斂。</p>
+            </article>
+            <article class="highlight-card">
+              <header>
+                <span class="highlight-tag">ERP</span>
+                <strong>ERP 系統模組開發</strong>
+              </header>
+              <p>開發 ERP 系統中的人效 KPI、財務、物流模組，負責指標計算、後端流程、資料處理與內部作業串接。</p>
+            </article>
+            <article class="highlight-card">
+              <header>
+                <span class="highlight-tag">OPS</span>
+                <strong>ERP 維運與權限管理</strong>
+              </header>
+              <p>負責日常權限調整、ERP 系統維運，並透過查詢 LOG 追蹤異常來源，協助處理緊急狀況與線上問題。</p>
+            </article>
+            <article class="highlight-card">
+              <header>
+                <span class="highlight-tag">JOB</span>
+                <strong>B2B 排程產出</strong>
+              </header>
+              <p>將 B2B 每日需要人工手動產出的作業改為排程自動產出，減少重複操作並提升固定流程的穩定性。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel yifan-panel panel-mirror" id="yifan" data-panel data-year="2024—2025" data-label="yifan">
+        <div class="panel-copy slim-copy">
+          <p class="kicker">06 / Yifan Technology · 2024 — 2025</p>
+          <h2>一帆科技｜VB6 → C# 車險核心遷移</h2>
+          <p class="lead">主導車險核心系統重構，重新設計底層商業邏輯</p>
+        </div>
+
+        <div class="frame frame-migration" aria-label="車險核心遷移過程">
+          <div class="frame-bar">
+            <span class="frame-pulse" aria-hidden="true"></span>
+            <strong>migration.log</strong>
+            <em>active</em>
+          </div>
+          <div class="migration-visual">
+            <span>VB6</span>
+            <i data-lucide="arrow-right"></i>
+            <span>C#</span>
+          </div>
+          <ul class="story-list">
+            <li>分析保單計算、風險評估、理賠邏輯，將隱含規則模組化為可測試元件</li>
+            <li>設計並實作核心後端模組，支援車險資料處理與系統整合</li>
+            <li>優化效能瓶頸與結構問題，降低技術債與長期維運成本</li>
+            <li>把實際保險需求轉換為穩定且可擴展的系統設計</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>王冠博 Kuan Po Wang</span>
+      <div>
+        <a href="mailto:benson871010@gmail.com">benson871010@gmail.com</a>
+        <a href="assets/docs/kuan-po-wang-resume-zh.pdf" target="_blank" rel="noreferrer">中文履歷</a>
+        <a href="assets/docs/kuan-po-wang-cv-en.pdf" target="_blank" rel="noreferrer">English CV</a>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" data-lightbox aria-label="獎狀檢視">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="關閉">
+        <i data-lucide="x"></i>
+      </button>
+      <figure>
+        <img src="assets/images/award-06.jpg" alt="獎狀預覽" data-lightbox-img />
+        <figcaption data-lightbox-title>競賽獎狀</figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>
